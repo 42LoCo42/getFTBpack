@@ -1,0 +1,24 @@
+* getFTBpack - a FTB modpack downloader
+** How to run
+If you have [[https://nixos.org/][Nix]] installed and [[https://nixos.wiki/wiki/Flakes][Flakes]] enabled, just do
+#+begin_src shell
+  nix run github:42LoCo42/getFTBpack <pack ID> <version ID>
+#+end_src
+
+Else, install [[https://go.dev/][Go]] and clone & run with these commands:
+#+begin_src shell
+  git clone https://github.com/42LoCo42/getFTBpack
+  cd getFTBpack
+  go run . <pack ID> <version ID>
+#+end_src
+
+** Where to get the IDs from?
+On the FTB website of a pack ([[https://www.feed-the-beast.com/modpacks/88-ftb-academy-116?tab=versions][example]]), go to the versions tab
+and find the ID of the version you want.
+
+[[file:img/versionID.png]]
+
+To find the pack ID, scroll down a bit until you see the section labelled
+"Developer / Server Admin". Here the pack ID and latest release ID are located.
+
+[[file:img/packID.png]]
